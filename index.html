@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Tour</title>
+    <link href="https://arvr.google.com/tourcreator/static/images/touch/touch-icon-120x120.png" rel="icon" sizes="120x120">    <link href="style.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src="script.js"></script> 
+</head>
+  <body>
+    <div id="splash">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+    <a-scene>
+      <a-assets timeout="1000000000">
+        <img id="room" src="room.jpg">
+      </a-assets>
+      <a-sky log="room" src="#room" rotation="0 0 0"></a-sky>
+      <a-text font="kelsonsans" value="Copyright @ sd" width="3.6" position="-2.7 0.25 -1.5"
+              rotation="0 15 0"></a-text>
+    </a-scene>
+  </body>
+</html>
